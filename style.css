@@ -34,6 +34,10 @@ header a {
 	align-items: center;
 }
 
+header img {
+	margin-left: 5px;
+}
+
 header a:hover {
 	color: #f1f1f1;
 }
@@ -145,10 +149,79 @@ header span {
 
 
 
+
+
+
 nav {
-	background-color: rgba(5, 5, 5, 0.7);
-	height: 66px;
+	background-color: rgba(43, 41, 45, 0.92);
+	height: 67px;
+	width: 100%;
+	border-top: groove;
+	border-top-color: #939393;
+	border-top-width: 1px;
 }
+
+.max-width {
+	width: 100%;
+	max-width: 1237px;
+	margin: auto;
+}
+
+.nav-item/*, .nav-free-to-play*/ {
+	height: 67px;
+	padding: 0 22px;
+	float: left;
+	/*vertical-align: middle;*/
+}
+
+.nav-item a/*, .nav-free-to-play a*/ {
+	height: 67px;
+	display: block;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	font-weight: 700;
+	color: #aaaaab;
+	text-decoration: none;
+}
+
+.nav-free-to-play {
+	padding: 0 22px;
+	float: right;
+	height: 47px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-free-to-play a {
+	display: block;
+	height: 47px;
+	text-transform: uppercase;
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+
+
+
+nav:before, nav:after {
+	content: "";
+	display: table;
+}
+nav:after {
+	clear: both; /* подчеркивание блоков / завершение обтекания */
+}
+
+
+
+
+
 
 
 
